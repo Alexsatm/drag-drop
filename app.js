@@ -1,6 +1,6 @@
-const lists = document.querySelectorAll('.list');
-const rightBox = document.getElementById('right');
-const leftBox = document.getElementById('left');
+let lists = document.getElementsByClassName('list');
+let rightBox = document.getElementById('right');
+let leftBox = document.getElementById('left');
 
 for(let list of lists) {
     list.addEventListener('dragstart', (e) => {
@@ -10,17 +10,17 @@ for(let list of lists) {
             e.preventDefault();
         });
         rightBox.addEventListener('drop', (e) => {
-            rightBox.append(selected);
+            rightBox.appendChild(selected);
             selected = null;
-        })
+        });
 
         leftBox.addEventListener('dragover', (e) => {
             e.preventDefault();
         });
 
         leftBox.addEventListener('drop', (e) => {
-            rightBox.append(selected);
+            leftBox.appendChild(selected);
             selected = null;
-        })
+        });
     })
 }
