@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 .container {
     width: 100%;
     min-height: 100vh;
@@ -13,14 +12,12 @@
     align-items: center;
     justify-content: center;
 }
-
 #left, #right {
     width: 300px;
     min-height: 400px;
     margin: 20px;
     border: 2px dashed #fff;
 }
-
 .list {
     background-color: #e91e72;
     height: 60px;
@@ -30,7 +27,6 @@
     align-items: center;
     cursor: grab;
 }
-
 .list img {
     width: 10px;
     margin-left: 20px;
